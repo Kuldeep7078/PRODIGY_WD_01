@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Responsive Landing Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<header id="site-header" class="site-header" role="banner">
+			<div class="container nav-container">
+				<a class="logo" href="#home">Brand</a>
+				<nav id="primary-nav" class="primary-nav" aria-label="Primary">
+					<button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+						<span class="sr-only">Menu</span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<ul id="nav-list" class="nav-list">
+						<li><a class="nav-link" href="#home">Home</a></li>
+						<li><a class="nav-link" href="#about">About</a></li>
+						<li><a class="nav-link" href="#services">Services</a></li>
+						<li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="home" class="main-content" tabindex="-1">
+			<section class="section hero">
+				<div class="container hero-inner">
+					<h1>Welcome to Responsive Landing Page</h1>
+					<p class="lead">Modern, accessible and mobile‑friendly template with an interactive, scroll‑aware navigation bar.</p>
+					<div class="cta-group">
+						<a href="#about" class="btn btn-primary">Learn More</a>
+						<a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section about">
+				<div class="container narrow">
+					<h2>About Us</h2>
+					<p>We craft fast, responsive, and beautiful web experiences. Our focus is blending design with functionality to deliver products users love. From landing pages to full applications, we emphasize clarity, performance, and accessibility.</p>
+				</div>
+			</section>
+
+			<section id="services" class="section services">
+				<div class="container">
+					<h2>Our Services</h2>
+					<div class="grid">
+						<div class="card"><h3>UI/UX Design</h3><p>Human‑centered design with emphasis on usability and visual clarity.</p></div>
+						<div class="card"><h3>Frontend Development</h3><p>Responsive, accessible interfaces using modern HTML, CSS, and JavaScript.</p></div>
+						<div class="card"><h3>Performance Tuning</h3><p>Optimize load times and interactions for better user experience.</p></div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio" class="section portfolio">
+				<div class="container">
+					<h2>Portfolio</h2>
+					<div class="grid portfolio-grid">
+						<article class="portfolio-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Project 1</h3>
+							<p>Landing page with animated hero and scroll‑aware navigation.</p>
+						</article>
+						<article class="portfolio-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Project 2</h3>
+							<p>Responsive product showcase with grid layouts and filters.</p>
+						</article>
+						<article class="portfolio-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Project 3</h3>
+							<p>Multi‑section marketing site with polished typography.</p>
+						</article>
+						<article class="portfolio-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Project 4</h3>
+							<p>Dashboard concept with cards and semantic HTML components.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact">
+				<div class="container">
+					<h2>Contact Us</h2>
+					<form class="contact-form" onsubmit="return false;">
+						<label>
+							<span>Name</span>
+							<input type="text" placeholder="Your name" required />
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" placeholder="name@example.com" required />
+						</label>
+						<label class="full">
+							<span>Message</span>
+							<textarea rows="4" placeholder="How can we help?"></textarea>
+						</label>
+						<button class="btn btn-primary" type="submit">Send</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© <span id="year"></span> Brand. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script src="./script.js" defer></script>
+	</body>
+</html> 
